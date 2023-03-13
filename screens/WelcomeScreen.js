@@ -16,6 +16,7 @@ export default WelcomeScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding: 30,
     alignItems: 'center',
     justifyContent: 'center'
   },
@@ -25,6 +26,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
   },
   bodyText: {
-    fontSize: 30
+    fontSize: 30,
+    marginTop: 50,
   }
 });
