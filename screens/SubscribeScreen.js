@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Image, StyleSheet, Text, TextInput, Pressable } from 'react-native';
+import { View, Image, StyleSheet, Text, TextInput, Pressable, Alert } from 'react-native';
 
 const SubscribeScreen = () => {
   // Add subscribe screen code here
@@ -17,7 +17,7 @@ const SubscribeScreen = () => {
       />
       <Pressable 
         style={styles.button}
-        onPress={() => null}>
+        onPress={() => Alert.alert('Thanks for subscribing, stay tuned!')}>
         <Text style={styles.buttonText}>Subscribe</Text>
       </Pressable>
     </View>
