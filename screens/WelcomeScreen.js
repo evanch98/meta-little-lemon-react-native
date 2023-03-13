@@ -2,7 +2,6 @@ import * as React from 'react';
 import { View, Image, StyleSheet, Text, Pressable } from 'react-native';
 
 const WelcomeScreen = ({ navigation }) => {
-  // Add welcome screen code here.
   return (
     <>
       <View style={styles.container}>
