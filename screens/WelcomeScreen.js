@@ -10,7 +10,9 @@ const WelcomeScreen = ({ navigation }) => {
         <Text style={styles.bodyText}>Little Lemon, your local Mediterranean Bistro</Text>
       </View>
       <View style={styles.secondContainer}>
-        <Pressable style={styles.button}>
+        <Pressable 
+          style={styles.button}
+          onPress={() => navigation.navigate('Subscribe')}>
           <Text style={styles.buttonText}>Newsletter</Text>
         </Pressable>
       </View>
