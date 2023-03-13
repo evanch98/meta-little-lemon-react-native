@@ -15,6 +15,7 @@ const SubscribeScreen = () => {
         value={email}
         onChangeText={onChangeEmail}
         placeholder='example@email.com'
+        keyboardType='email-address'
       />
       <Pressable 
         style={styles.button}
