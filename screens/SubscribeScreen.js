@@ -18,7 +18,7 @@ const SubscribeScreen = () => {
         keyboardType='email-address'
       />
       <Pressable 
-        style={styles.button}
+        style={[styles.button, !isEmailValid && styles.disabled]}
         onPress={() => Alert.alert('Thanks for subscribing, stay tuned!')}
         disabled={!isEmailValid}>
         <Text style={styles.buttonText}>Subscribe</Text>
@@ -68,5 +68,10 @@ const styles = StyleSheet.create({
     color: '#fff',
     textAlign: 'center',
     fontSize: 20,
+  },
+  disabled: {
+    backgroundColor: 'grey',
+    borderColor: 'grey',
+    opacity: 0.5,
   },
 });
