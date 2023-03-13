@@ -4,13 +4,22 @@ import { View, Image, StyleSheet, Text, Pressable } from 'react-native';
 const WelcomeScreen = ({ navigation }) => {
   return (
     <>
+      {/* 
+      The upper half of the screen
+      Includes a logo and a text
+      */}
       <View style={styles.container}>
         <Image style={styles.logo} source={require('../assets/little-lemon-logo.png')} />
         <Text style={styles.bodyText}>Little Lemon, your local Mediterranean Bistro</Text>
       </View>
+      {/* 
+      The lower half of the screen
+      Includes a button
+      */}
       <View style={styles.secondContainer}>
         <Pressable 
           style={styles.button}
+          /* Navigate to the SubscribeScreen */
           onPress={() => navigation.navigate('Subscribe')}>
           <Text style={styles.buttonText}>Newsletter</Text>
         </Pressable>
@@ -21,6 +30,7 @@ const WelcomeScreen = ({ navigation }) => {
 
 export default WelcomeScreen;
 
+/* Styles for the components */
 const styles = StyleSheet.create({
   container: {
     flex: 1,
