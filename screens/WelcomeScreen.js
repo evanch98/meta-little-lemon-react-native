@@ -4,7 +4,7 @@ import { View, Image, StyleSheet } from 'react-native';
 const WelcomeScreen = ({ navigation }) => {
   // Add welcome screen code here.
   return (
-  <View>
+  <View style={styles.container}>
     <Image style={styles.logo} source={require('../assets/little-lemon-logo.png')} />
   </View>
   );
@@ -13,9 +13,12 @@ const WelcomeScreen = ({ navigation }) => {
 export default WelcomeScreen;
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
   logo: {
-    height: 300,
-    width: 400,
+    height: 250,
+    width: 350,
     resizeMode: 'contain'
   }
 });
